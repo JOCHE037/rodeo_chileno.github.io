@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #ffffff;
+}
+.container{
+    width: 100%;
+    max-width: 1369px;
+    margin: auto;
+    margin-top: 0.10px;
+}
+.lbl-menu{
+    background: #d15e5e;
+}
+.lbl-menu label{
+    display: inline-block;
+    padding: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+.lbl-menu label:hover{
+    background: #ffffff;
+}
+img {
+	width: 400px;
+	height: 200px;
+	object-fit: cover;
+}
+.content{
+    position: relative;
+}
+.content div{
+    position: absolute;
+    line-height: 1.8;
+    transition: all 600ms ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.90);
+    padding: 30px;
+    background: #fff;
+    padding-bottom: 40px;
+}
+#radio1,#radio2,#radio3,#radio4{
+    display: none;
+}
+#radio1:checked ~ .tab1,
+#radio2:checked ~ .tab2,
+#radio3:checked ~ .tab3,
+#radio4:checked ~ .tab4
+{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.content div:after{
+    position: absolute;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    bottom: 100%;
+    left: 28px;
+}
+.content .tab2:after{
+    left: 152px;
+}
+.content .tab3:after{
+    left: 314px;
+}
+.content .tab4:after{
+    left: 434px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
